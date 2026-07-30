@@ -26,12 +26,16 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 w-full bg-white/80 dark:bg-[#060713]/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-[#1B153D] transition-colors duration-300">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="font-bold text-xl tracking-tight text-gray-900 dark:text-white">
-          MyPortfolio<span className="text-purple-500">.</span>
-        </a>
+      <a href="#" className="flex items-center gap-2.5 font-bold text-lg text-gray-900 dark:text-white group">
+        <div className="w-8 h-8 rounded-lg bg-purple-600 text-white flex items-center justify-center font-mono font-bold text-sm shadow-md shadow-purple-600/30 group-hover:scale-105 transition">
+          F
+        </div>
+        <span>Fahim <span className="text-purple-400">Dipto</span></span>
+      </a>
         
         <div className="flex items-center gap-6 text-sm font-medium text-gray-600 dark:text-gray-300">
           <a href="#about" className="hover:text-black dark:hover:text-purple-400 transition">About</a>
+          <a href="#experience" className="hover:text-black dark:hover:text-purple-400 transition">Experience</a>
           <a href="#projects" className="hover:text-black dark:hover:text-purple-400 transition">Projects</a>
           <a href="#contact" className="hover:text-black dark:hover:text-purple-400 transition">Contact</a>
           

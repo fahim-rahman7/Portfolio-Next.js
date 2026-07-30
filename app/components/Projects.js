@@ -1,7 +1,15 @@
-import { FaGithub, FaExternalLinkAlt, FaCode, FaMobileAlt, FaCloud, FaBrain, FaPalette } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaCode, FaMobileAlt, FaCloud, FaBrain, FaPalette, FaShoppingCart } from 'react-icons/fa';
 
 export default function Projects() {
   const projectsList = [
+    {
+      title: "MegaMart E-Commerce",
+      description: "A full-featured modern e-commerce platform offering smooth product browsing, responsive UI, dynamic search, and seamless checkout experience.",
+      tags: ["RTK Query", "React", "Tailwind CSS", "Vercel"],
+      icon: <FaShoppingCart size={20} />,
+      github: "https://github.com/fahim-rahman7/megamart-e-comeerce", // Update with your actual repo link
+      live: "https://megamart-e-commerce-lilac.vercel.app/"
+    },
     {
       title: "Web Development",
       description: "Modern, responsive web applications built with cutting-edge frameworks and performance best practices.",
@@ -41,14 +49,6 @@ export default function Projects() {
       icon: <FaPalette size={20} />,
       github: "https://github.com/yourusername/design-system",
       live: "https://your-design-system.com"
-    },
-    {
-      title: "UI/UX Design Systems",
-      description: "Beautiful, intuitive design components prioritized for seamless user interactions and web accessibility standards.",
-      tags: ["Figma", "Design Tokens", "Tailwind CSS", "Accessibility"],
-      icon: <FaPalette size={20} />,
-      github: "https://github.com/yourusername/design-system",
-      live: "https://your-design-system.com"
     }
   ];
 
@@ -68,7 +68,7 @@ export default function Projects() {
           My <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-pink-500 bg-clip-text text-transparent">Projects</span>
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mt-4 text-base md:text-lg max-w-2xl mx-auto">
-          Comprehensive software engineering solutions tailored to your business needs and digital growth.
+          Comprehensive software engineering solutions tailored to user needs and modern web standards.
         </p>
       </div>
 

@@ -76,7 +76,7 @@ export default function Hero() {
             {/* Larger Image Container */}
             <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] rounded-3xl overflow-hidden bg-white dark:bg-[#120E2E] border-2 border-gray-200 dark:border-[#221B52] shadow-2xl">
               <Image
-                src="/profile.jpg"
+                src="/profile_3.jpg"
                 alt="Alex Developer Profile Picture"
                 fill
                 priority
