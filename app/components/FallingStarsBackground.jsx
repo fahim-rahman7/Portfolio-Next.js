@@ -29,7 +29,7 @@ export default function FallingStarsBackground() {
     const fallingCount = 110;
 
     for (let i = 0; i < fallingCount; i++) {
-      const initialSpeed = Math.random() * 1.5 + 0.8;
+      const initialSpeed = Math.random() * 1 + 0.8;
       fallingParticles.push({
         x: Math.random() * width,
         y: Math.random() * height,
