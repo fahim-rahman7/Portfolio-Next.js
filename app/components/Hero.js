@@ -1,10 +1,16 @@
 import Image from 'next/image';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import FallingStarsBackground from './FallingStarsBackground';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center max-w-6xl mx-auto px-6 pt-28 pb-16">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+    <section className="relative min-h-screen flex items-center w-full px-6 pt-28 pb-16 overflow-hidden">
+      
+      {/* 🌟 Falling Stars Background Animation (Covers Full Viewport Width) */}
+      <FallingStarsBackground />
+
+      {/* Inner Container for Content Alignment */}
+      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
         
         {/* Left Column: Text Content */}
         <div className="lg:col-span-6 flex flex-col items-start">
@@ -42,7 +48,7 @@ export default function Hero() {
               <FaLinkedin size={22} />
             </a>
             <a
-              href="fahimrahmandipto7@gmail.com"
+              href="mailto:fahimrahmandipto7@gmail.com"
               aria-label="Send Email"
               className="p-3.5 rounded-xl bg-gray-100 dark:bg-[#120E2E] border border-transparent dark:border-[#221B52] hover:dark:border-purple-500 hover:text-purple-400 transition"
             >
@@ -67,17 +73,17 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Column: Bigger Profile Image */}
+        {/* Right Column: Profile Image with Uniform Lighting Effect */}
         <div className="lg:col-span-6 flex justify-center lg:justify-end">
           <div className="relative group">
-            {/* Background Purple Glow Effect */}
-            <div className="absolute -inset-2 bg-gradient-to-r from-purple-600 via-fuchsia-600 to-pink-600 rounded-[2.5rem] blur-2xl opacity-50 group-hover:opacity-80 transition duration-500"></div>
+            {/* Uniform Symmetrical Purple Glow Effect on Both Sides */}
+            <div className="absolute -inset-3 bg-purple-600 rounded-[2.5rem] blur-2xl opacity-50 group-hover:opacity-80 transition duration-500"></div>
 
             {/* Larger Image Container */}
             <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] rounded-3xl overflow-hidden bg-white dark:bg-[#120E2E] border-2 border-gray-200 dark:border-[#221B52] shadow-2xl">
               <Image
                 src="/profile_3.jpg"
-                alt="Alex Developer Profile Picture"
+                alt="Fahim Rahman Dipto Profile Picture"
                 fill
                 priority
                 sizes="(max-width: 640px) 288px, (max-width: 1024px) 384px, 450px"
