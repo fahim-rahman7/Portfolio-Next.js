@@ -62,7 +62,7 @@ export default function Experience() {
       </div>
 
       {/* Vertical Timeline */}
-      <div className="relative border-l-2 border-purple-900/40 dark:border-purple-800/30 ml-4 md:ml-32 space-y-12">
+      <div className="relative border-l-2 border-purple-900/40 dark:border-purple-800/30 ml-4 md:ml-36 space-y-12">
         {timelineData.map((item, index) => (
           <div key={index} className="relative pl-8 md:pl-10 group">
             
@@ -78,8 +78,8 @@ export default function Experience() {
             </div>
 
             {/* Date Pill (Desktop Side Badge) */}
-            <div className="hidden md:block absolute -left-36 top-2 text-right w-28">
-              <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded-md bg-purple-950/60 text-purple-300 border border-purple-800/40">
+            <div className="hidden md:block absolute -left-44 top-2 text-right w-36">
+              <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded-md bg-purple-950/60 text-purple-300 border border-purple-800/40 whitespace-nowrap inline-block">
                 {item.duration}
               </span>
             </div>
