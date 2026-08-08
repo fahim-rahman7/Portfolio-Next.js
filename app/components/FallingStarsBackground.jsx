@@ -21,12 +21,15 @@ export default function FallingStarsBackground() {
     };
     window.addEventListener("resize", handleResize);
 
+    // Check if the screen is a mobile device to reduce particle density
+    const isMobile = width < 768;
+
     // 1. Falling math and coding signs
     const symbols = [
-      "()", "{}", "0", "1", "+", "[]", "</>", "=", "||", "?", "=>", "&&", "!=", "//"
+      "()", "{}", "0", "1", "+", "[]", "</>", "=", "||", "?", "=>", "&&", "!=", "//","*"
     ];
     const fallingParticles = [];
-    const fallingCount = 110;
+    const fallingCount = isMobile ? 40 : 110; // 👈 Fewer particles on mobile
 
     for (let i = 0; i < fallingCount; i++) {
       const initialSpeed = Math.random() * 1 + 0.8;
@@ -48,7 +51,7 @@ export default function FallingStarsBackground() {
     // 2. Floating ambient shapes (stars, diamonds, pentagons, squares - do NOT fall)
     const floatingShapeTypes = ["star", "diamond", "pentagon", "square"];
     const floatingParticles = [];
-    const floatingCount = 80;
+    const floatingCount = isMobile ? 25 : 80; // 👈 Fewer shapes on mobile
 
     for (let i = 0; i < floatingCount; i++) {
       floatingParticles.push({
