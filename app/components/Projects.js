@@ -5,7 +5,7 @@ export default function Projects() {
     {
       title: "MegaMart E-Commerce",
       description: "A full-featured modern e-commerce platform offering smooth product browsing, responsive UI, dynamic search, and seamless checkout experience.",
-      tags: [ "React", "Node.js", "Express.js", "MongoDB", "RTK Query", "Redis", "Tailwind CSS",],
+      tags: [ "React", "Node.js", "Express.js", "MongoDB", "RTK Query", "Redis", "Tailwind CSS", "Cloudinary", "Multer",],
       icon: <FaShoppingCart size={20} />,
       github: "https://github.com/fahim-rahman7/megamart-e-comeerce", // Update with your actual repo link
       live: "https://megamart-e-commerce-lilac.vercel.app/"
